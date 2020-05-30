@@ -1,2 +1,2 @@
 # portfolio-website
-by rob
+by rob korich david
