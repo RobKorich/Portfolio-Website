@@ -177,6 +177,7 @@ button:hover, button:focus {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
+  padding: 0;
 }
 
 @media all and (max-width: 500px) {
@@ -273,23 +274,5 @@ button:focus,
   animation: 10s cloud-move-reverse infinite alternate linear;
 }
 
-/*Download my CV button centered*/
-.button__placement {
-  position: absolute;
-  left: 50%;
-  margin-left: -50px;
-}
 
-/*About me table placement centered*/
-.table__placement {
-  position: absolute;
-  left: 45%;
-  margin-left: -50px;
-}
 
-/*About Me text centered*/
-.aboutme__placement {
-  position: absolute;
-  left: 50%;
-  margin-left: -50px;
-}
