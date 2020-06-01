@@ -12,7 +12,7 @@
 }
 
 a {
-  color: #357b70;
+  color: #A7A2A9;
 }
 
 a:active {
@@ -27,7 +27,7 @@ a:hover, a:focus {
 
 a:visited {
   /* visited link*/
-  color: #05676e;
+  color: #A7A2A9;
 }
 
 .about-me-list{
@@ -43,7 +43,7 @@ a:visited {
 }
 
 body {
-  background-color: white;
+  background-color: #061228;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -59,8 +59,8 @@ body {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the button */
-  background-color: #357b70;
-  color: #FFF;
+  background-color: #e0b354;
+  color: #575A5E;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -77,8 +77,8 @@ button {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the button */
-  background-color: #357b70;
-  color: #FFF;
+  background-color: #e0b354;
+  color: #575A5E;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -103,6 +103,10 @@ button:focus,
   color: #2b2b2b;
 }
 
+div {
+  color: #F4F7F5;
+}
+
 /* Grid fallback*/
 .grid__item {
   display: inline-block;
@@ -119,7 +123,7 @@ button:focus,
 }
 
 .grid__item {
-  background-color: #d3d3d3;
+  background-color: #222823;
   padding: 10px;
   /*set width to auto*/
   width: auto;
@@ -128,11 +132,13 @@ button:focus,
 h1 {
   font-size: 30px;
   font-weight: 700;
+  color: #F4F7F5;
 }
 
 h2 {
   font-size: 24px;
   font-weight: 700;
+  color: #F4F7F5;
 }
 
 h3 {
@@ -142,10 +148,17 @@ h3 {
 
 header {
   font-size: 22px;
-  border-bottom: 2px solid #d3d3d3;
-  background-color: #d3d3d3;
+  border-bottom: 2px solid #061228;
+  background-color: #061228;
 }
 
+label {
+  color: #F4F7F5
+}
+
+li {
+  color: #F4F7F5;
+}
 .navigation-list__item--active {
   text-decoration: none;
 }
@@ -159,6 +172,10 @@ header {
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
+}
+
+p {
+  color: #F4F7F5;
 }
 
 /*Sets footer to not be affected by float of profile picture, sets footer to flex display in a column while aligning text to center*/
@@ -211,6 +228,10 @@ header {
 .profile {
   max-width: 700px;
   margin: 0 auto;
+}
+
+table {
+  color: #F4F7F5
 }
 
 @media all and (max-width: 500px) {

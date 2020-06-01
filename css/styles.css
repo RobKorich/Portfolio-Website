@@ -1,11 +1,16 @@
 :root {
-  --primary-color: #357b70;
+  --primary-color: #A7A2A9;
   --primary-text-color: #FFF;
   --secondary-color: #e0b354;
   --secondary-text-color: #2b2b2b;
-  --light-grey: #d3d3d3;
-  --visited-link-color: #05676e;
+  --silver-metallic: #A7A2A9;
+  --visited-link-color: #A7A2A9;
   --active-link-color: #cc00cc;
+  --header-color: #A7A2A9;
+  --h1-color: #F4F7F5;
+  --body-background-color: #061228;
+  --button-text-color: #575A5E;
+  --grid-background-color: #222823;
   --header-font-weight: 700;
 }
 
@@ -46,7 +51,7 @@ a:visited {
 }
 
 body {
-  background-color: white;
+  background-color: var(--body-background-color);
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -62,8 +67,8 @@ body {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the button */
-  background-color: var(--primary-color);
-  color: var(--primary-text-color);
+  background-color: var(--secondary-color);
+  color: var(--button-text-color);
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -87,6 +92,10 @@ button:focus,
   color: var(--secondary-text-color);
 }
 
+div {
+  color: var(--h1-color);
+}
+
 /* Grid fallback*/
 .grid__item {
   display: inline-block;
@@ -101,7 +110,7 @@ button:focus,
 }
 
 .grid__item {
-  background-color: var(--light-grey);
+  background-color: var(--grid-background-color);
   padding: 10px;
   /*set width to auto*/
   width: auto;
@@ -110,11 +119,13 @@ button:focus,
 h1 {
   font-size: 30px;
   font-weight: var(--header-font-weight);
+  color: var(--h1-color);
 }
 
 h2 {
   font-size: 24px;
   font-weight: var(--header-font-weight);
+  color: var(--h1-color);
 }
 
 h3 {
@@ -124,10 +135,17 @@ h3 {
 
 header {
   font-size: 22px;
-  border-bottom: 2px solid var(--light-grey);
-  background-color: var(--light-grey);
+  border-bottom: 2px solid var(--body-background-color);
+  background-color: var(--body-background-color);
 }
 
+label {
+  color: var(--h1-color)
+}
+
+li {
+  color: var(--h1-color);
+}
 .navigation-list__item--active {
   text-decoration: none;
 }
@@ -141,6 +159,10 @@ header {
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
+}
+
+p {
+  color: var(--h1-color);
 }
 
 /*Sets footer to not be affected by float of profile picture, sets footer to flex display in a column while aligning text to center*/
@@ -182,6 +204,10 @@ header {
 .profile {
   max-width: 700px;
   margin: 0 auto;
+}
+
+table {
+  color: var(--h1-color)
 }
 
 @media all and (max-width: 500px) {
