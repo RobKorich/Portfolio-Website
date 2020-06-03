@@ -36,28 +36,34 @@
     </nav>
   </header>
 
-  <div>
+  <div class="contact-heading">
     <h1>Contact Rob Korich</h1>
     <h2>
-      <a href="mailto:office@careerfoundry.com">Send me an email</a>
+      <a href="mailto:office@careerfoundry.com">E-mail Me Directly</a>
+      <br>
+      <h2>or</h2>
     </h2>
   </div>
 
-  <form action="" method="post" id="contact-form">
-    <label class="standard-label" for="contact-email">E-mail: </label>
-    <input type="email" id="contact-email" required>
-
-    <label class="standard-label" for="contact-telephone">Telephone: </label>
-    <input type="tel" id="contact-telephone" pattern="\d{3}[\-]\d{3}[\-]\d{4}">
-
-    <label class="standard-label" for="contact-message">Message: </label>
-    <textarea maxlength="240" id="contact-message" required></textarea>
-
-    <input type="submit" value="Send message">
-  </form>
+  <div class="form-style-3">
+    <form action="" method="post" id="contact-form">
+      <fieldset>
+        <label for="field1"><span>Name <span class="required">*</span></span><input type="text" class="input-field" name="field1" value="" /></label>
+        <label for="field2"><span>Email <span class="required">*</span></span><input type="email" class="input-field" name="field2" value="" /></label>
+        <label for="field3"><span>Phone <span class="required">*</span></span><input type="text" class="input-field" name="field3" value="" /></label>
+        <label for="field4"><span>Subject</span><select name="field4" class="select-field">
+          <option value="Freelance Work">Freelance Work</option>
+          <option value="Interview">Interview</option>
+          <option value="General Inquiry">General Inquiry</option>
+        </select></label>
+        <label for="field6"><span>Message <span class="required">*</span></span><textarea maxlength="240" name="field6" class="textarea-field"></textarea></label>
+        <label><span> </span><button class="contact-button" type="submit" value="Submit">Submit</button></label>
+      </fieldset>
+    </form>
+  </div>
   <br>
 
-  <div>
+  <div class="contact-info">
     <!--add my info later-->
     Tacoma, Washington<br>
     98405<br>
