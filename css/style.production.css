@@ -331,6 +331,10 @@ table {
   margin: 50px 0;
 }
 
+.work-center {
+  text-align: center;
+}
+
 @media all and (max-width: 500px) {
   .grid {
     -ms-grid-columns: 1fr;
