@@ -362,6 +362,14 @@ p {
   margin: 0 auto;
 }
 
+.social {
+  transform: .2s;
+}
+
+.social:hover {
+  transform: scale(1.2);
+}
+
 table {
   color: #F4F7F5
 }
