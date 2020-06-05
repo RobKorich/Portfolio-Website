@@ -5,6 +5,9 @@
 * Browsers: last 2 version
 */
 
+
+
+
 /*Sets the default width of an element to include the padding and the border*/
 * {
   -webkit-box-sizing: border-box;
@@ -255,7 +258,7 @@ li {
 
 .navigation-list__item {
   position: relative;
-  padding: 20px;
+  padding: 10px;
   text-decoration: none;
 }
 

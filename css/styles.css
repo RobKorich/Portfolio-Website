@@ -243,6 +243,7 @@ li {
 /*takes away bullet points in list*/
 .navigation-list {
   list-style: none;
+  margin: 20px;
 }
 
 .navigation-list__item {
