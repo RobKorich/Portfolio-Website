@@ -250,6 +250,51 @@ li {
 /*takes away bullet points in list*/
 .navigation-list {
   list-style: none;
+  margin: 20px;
+}
+
+.navigation-list__item {
+  position: relative;
+  padding: 20px;
+  text-decoration: none;
+}
+
+/* Top and Bottom borders go out - animation for nav bar*/
+div.navigation-list a:before, div.navigation-list a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+/*animation for nav bar*/
+div.navigation-list a:before
+{
+    top: 0px;
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+}
+
+/*animation for nav bar*/
+div.navigation-list a:after
+{
+    bottom: 0px;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+}
+
+/*animation for nav bar*/
+div.navigation-list a:hover:before, div.navigation-list a:hover:after
+{
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
 }
 
 /*targets navigation list and sets list items inline and not stacked ontop of eachother with a margin of 15px from eachother*/
@@ -443,3 +488,5 @@ table {
   -webkit-animation: 10s cloud-move-reverse infinite alternate linear;
           animation: 10s cloud-move-reverse infinite alternate linear;
 }
+
+

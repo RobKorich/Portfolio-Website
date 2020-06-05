@@ -245,6 +245,46 @@ li {
   list-style: none;
 }
 
+.navigation-list__item {
+  position: relative;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* Top and Bottom borders go out - animation for nav bar*/
+div.navigation-list a:before, div.navigation-list a:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+/*animation for nav bar*/
+div.navigation-list a:before
+{
+    top: 0px;
+    transform: translateY(10px);
+}
+
+/*animation for nav bar*/
+div.navigation-list a:after
+{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+/*animation for nav bar*/
+div.navigation-list a:hover:before, div.navigation-list a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
 /*targets navigation list and sets list items inline and not stacked ontop of eachother with a margin of 15px from eachother*/
 .navigation-list li {
   display: inline-block;
