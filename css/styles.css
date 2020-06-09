@@ -106,6 +106,12 @@ button:focus,
   color: #2b2b2b;
 }
 
+.contact-button {
+  position: fixed;
+  bottom: 310px;
+  right: 760px;
+}
+
 .contact-heading{
   margin: 0 auto;
   text-align: center;
@@ -203,6 +209,11 @@ div {
   padding: 10px;
   /*set width to auto*/
   width: auto;
+}
+
+.grid__item:hover {
+  transform: .2s;
+  transform: scale(1.05);
 }
 
 h1 {

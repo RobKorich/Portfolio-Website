@@ -5,9 +5,6 @@
 * Browsers: last 2 version
 */
 
-
-
-
 /*Sets the default width of an element to include the padding and the border*/
 * {
   -webkit-box-sizing: border-box;
@@ -116,6 +113,12 @@ button:focus,
   color: #2b2b2b;
 }
 
+.contact-button {
+  position: fixed;
+  bottom: 310px;
+  right: 760px;
+}
+
 .contact-heading{
   margin: 0 auto;
   text-align: center;
@@ -213,6 +216,13 @@ div {
   padding: 10px;
   /*set width to auto*/
   width: auto;
+}
+
+.grid__item:hover {
+  -webkit-transform: .2s;
+          transform: .2s;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 h1 {
@@ -363,11 +373,13 @@ p {
 }
 
 .social {
-  transform: .2s;
+  -webkit-transform: .2s;
+          transform: .2s;
 }
 
 .social:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 table {
@@ -500,5 +512,9 @@ table {
   -webkit-animation: 10s cloud-move-reverse infinite alternate linear;
           animation: 10s cloud-move-reverse infinite alternate linear;
 }
+
+
+
+
 
 
