@@ -118,7 +118,7 @@ button:focus,
   text-align: center;
 }
 
-.contact-info{
+.contact-info { 
   text-align: center;
 }
 
@@ -215,8 +215,8 @@ div {
 .grid__item:hover {
   -webkit-transform: .2s;
           transform: .2s;
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 h1 {
